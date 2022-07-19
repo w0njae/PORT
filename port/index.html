@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>김원재ㅣ웹퍼블리셔</title>
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/master.css" />
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+	<script type="text/javascript" src="js//scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.easypiechart.min.js"></script>
+</head>
+<body>
+<div id="fullpage">
+	<!-- #menu list -->
+	<ul id="menu">
+		<li data-menuanchor="1Page" class="active"><a href="#1Page">Home</a></li>
+		<li data-menuanchor="2Page"><a href="#2Page">About me</a></li>
+		<li data-menuanchor="3Page"><a href="#3Page">Skill</a></li>
+		<li data-menuanchor="4Page"><a href="#4Page">Project</a></li>
+		<li data-menuanchor="5Page"><a href="#5Page">Contact</a></li>
+	</ul>
+	<!-- header start -->
+	<header class="section active" id="section main-box">
+		<!-- 마우스에 반응하는 비행기 -->
+		<div class="parallax">
+			<div id="airplane" class="par"></div>
+		</div>
+		<!-- 떠다니는 구름 list -->
+		<ul class="cloud-box">
+			<li id="clouds" class="cloud01"></li>
+			<li id="clouds" class="cloud02"></li>
+			<li id="clouds" class="cloud03"></li>
+			<li id="clouds" class="cloud04"></li>
+			<li id="clouds" class="cloud05"></li>
+			<li id="clouds" class="cloud06"></li>
+			<li id="clouds" class="cloud07"></li>
+			<li id="clouds" class="cloud08"></li>
+			<li id="clouds" class="cloud09"></li>
+			<li id="clouds" class="cloud10"></li>
+		</ul>
+		<!-- typing 기능 -->
+		<div id="welcome">
+			<div id="typeStyle"></div>
+			<div id="typeBox"><p>Welcome to my PORTFOLIO</p></div>
+		</div>
+		<div class="scroll">
+			<a href="#"></a>
+			<span>SCROLL</span>
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- About page start -->
+	<article class="section" id="About" >
+		<h2>About me</h2>
+		<div ID="Contents">
+			<!-- Contents 속 흰색 배경 -->
+			<div>
+				<!-- left 박스 -->
+				<div class="con-left">
+					<div>
+						<img src="images/wonjae.png">
+					</div>
+					<!-- PROFILE 박스 -->
+					<div ID="PROFILE">
+						<h3>PROFILE</h3>
+						<ul>
+							<li>김원재</li>
+							<li>1998.12.06</li>
+							<li>경기도 부천시</li>
+							<li>010 3896 0873</li>
+							<li>ewew160@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+				<!-- right 박스 -->
+				<div class="con-right">
+					<!-- LICENSE 박스 -->
+					<div ID="LICENSE">
+						<h3>LICENSE</h3>
+						<ul>
+							<li>
+								<span>2017.04</span><p>ITQ OA MASTER</p>
+							</li>
+							<li>
+								<span>2020.01</span><p>자동차 운전면허 1종</p>
+							</li>
+							<li>
+								<span>2022.06</span><p>정보처리산업기사</p>
+							</li>
+							<li>
+								<span>2022.07</span><p>GTQ 1급</p>
+							</li>
+						</ul>
+					</div>
+					<!-- EDUCATION 박스 -->
+					<div ID="EDUCATION">
+						<h3>EDUCATION</h3>
+						<ul>
+							<li>
+								<span>2017.02</span><p>부천 도당고등학교 졸업</p>
+							</li>
+							<li>
+								<span>2022.02</span><p>부천대학교 컴퓨터정보보안과 졸업</p>
+							</li>
+							<li>
+								<span>2022.08</span><p>부천 그린컴퓨터아카데미 수료</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 날아다니는 비행기 list -->
+		<ul ID="combat">
+			<li></li>
+			<li></li>
+		</ul>
+
+	</article>
+	<!-- About page end -->
+	<!-- SKILL page start -->
+	<article class="section" id="SKILL">
+		<h2>SKILL</h2>
+		<div>
+			<div id="tab">
+				<input type="radio" id="html" name="toggle" checked>
+				<input type="radio" id="css" name="toggle">
+				<input type="radio" id="js" name="toggle">
+				<input type="radio" id="ps" name="toggle">
+				<input type="radio" id="ai" name="toggle">
+				<p id="click">이<br>미<br>지<br>를<br>CLICK<br>해<br>보<br>세<br>요<br>!</p>
+				<p id="button">
+					<label for="html"><img src="images/html.png"></label>
+					<label for="css"><img src="images/css.png"></label>
+					<label for="js"><img src="images/java.png"></label>
+					<label for="ps"><img src="images/design.png"></label>
+					<label for="ai"><img src="images/ps.png"></label>
+				</p>
+		
+				<div class="chart-list">
+					<ul>
+						<li>
+							<div class="chart chart1" data-percent="50" data-bar-color="#f16529">
+								<span class="title">50%</span>
+							</div>
+						</li>
+						<li><h4>HTML</h4></li>
+						<li>시멘틱한 구조와 웹 표준 및 웹 접근성에 준수하는 마크업을 합니다. 웹 표준과 웹 접근성을 준수하는 마크업을 하며 시멘틱 태그를 이용하여 전체 레이아웃을 설계합니다.</li>
+					</ul>
+				</div>
+				<div class="chart-list">
+					<ul>
+						<li>
+							<div class="chart chart1" data-percent="50" data-bar-color="#2965f1">
+								<span class="title">50%</span>
+							</div>
+						</li>
+						<li><h4>CSS</h4></li>
+						<li>CSS 속성을 이해하며 디자인 시안에 따른 디자인을 구현할 수 있습니다. 미디어 쿼리를 이해하며 반응형 웹을 제작할 수 있습니다. 최신 트랜드인 flex 기법을 사용할 수 있습니다.</li>
+					</ul>
+				</div>
+				<div class="chart-list">
+					<ul>
+						<li>
+							<div class="chart chart1" data-percent="50" data-bar-color="#ffd83a">
+								<span class="title">50%</span>
+							</div>
+						</li>
+						<li><h4>Javascript / JQuery</h4></li>
+						<li>이벤트 메소드를 사용해 웹 퍼블리싱에 필요한 이미지 슬라이드, 내비게이션, 탭 메뉴 등 기능을 구현할 수 있습니다. 또한 다양한 플로그인을 활용하여 제작이 가능합니다.</li>
+					</ul>
+				</div>
+				<div class="chart-list">
+					<ul>
+						<li>
+							<div class="chart chart1" data-percent="50" data-bar-color="#31a8ff">
+								<span class="title">50%</span>
+							</div>
+						</li>
+						<li><h4>Photoshop / illustrator</h4></li>
+						<li>가나다</li>
+					</ul>
+				</div>
+				<div class="chart-list">
+					<ul>
+						<li>
+							<div class="chart chart1" data-percent="50" data-bar-color="#ff9a00">
+								<span class="title">50%</span>
+							</div>
+						</li>
+						<li><h4>ppt 한글</h4></li>
+						<li>가나다</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</article>
+	<!-- SKILL page end -->
+	<!-- PROJECT page star -->
+	<article class="section" id="PROJECT"><h2>PROJECT</h2>
+		<div class="slide active"><h3>MENU1</h3></div>
+		<div class="slide"><h3>MENU2</h3></div>
+		<div class="slide"><h3>MENU3</h3></div>
+		<div class="slide"><h3>MENU4</h3></div>
+	</article>
+	<!-- PROJECT page end -->
+	<!-- CONTACT page start -->
+	<article class="section" id="CONTACT">
+		<h2>CONTACT</h2>
+		<div class="contact-text">
+			<!-- contact-text 박스 -->
+			<div>
+				<!-- top airplane -->
+				<div class="box-air">
+					<span class="text-air text-air01"></span>
+					<p></p>
+				</div>
+				<!-- contact-text 박스 내용 -->
+				<div>
+					<div>
+						<h3>끝까지 봐주셔서 감사합니다.</h3>
+						<p>항상 배우려는 자세와 겸손한 마음으로 <br> 어제보다 오늘 더 성장하는 <span>김원재</span>가 되겠습니다.</p>
+					</div>
+					<ul class="info">
+						<li>
+							<p></p>
+							010 3896 0873
+						</li>
+						<li><p></p>
+							ewew160@gmail.com
+						</li>
+						<li><p></p>
+							ewew160
+						</li>
+					</ul>
+				</div>
+				<!-- bottom airplane -->
+				<div class="box-air">
+					<p></p>
+					<span class="text-air text-air02"></span>
+				</div>
+			</div>
+		</div>
+		<!-- footer start -->
+		<footer>
+			<!-- footer background -->
+			<div>
+				<p>Copyright 2022 KIMWONJAE All rights reserved.</p>
+				<p>※ 해당 사이트는 상업적 목적이 아닌 개인 <u>포트폴리오</u>용으로 제작되었습니다.</p>
+			</div>
+		</footer>
+		<!-- footer end -->
+	</article>
+	<!-- CONTACT page end -->
+</div>
+
+<script src="js/script.js"></script>
+<script>
+	$('.chart').easyPieChart({
+
+		trackColor: '#fff',
+		scaleColor: '#43DCFF',
+		lineCap: 'round',
+		lineWidth: 30,
+		size: 300,
+		animate: 5000,
+		onStart:$.noop,
+		onStop: $.noop
+	});
+</script>
+</body>
+</html>
