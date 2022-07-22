@@ -1,13 +1,3 @@
-// fullpage 설정
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-        sectionsColor: ['#43DCFF', '#43DCFF', '#43DCFF', '#43DCFF', '#43DCFF'],
-        anchors: ['1Page', '2Page', '3Page', '4Page', '5Page'],
-        menu: '#menu',
-    });
-});
-
-
 // 글씨 타이핑 효과 넣기
 $(document).ready(function() {
 	var text = document.getElementById("typeStyle");
@@ -43,3 +33,93 @@ $(document).ready(function() {
 			$(el).css('top', newY + 'px');
 	});
 });
+
+//skill page 원형 차트
+$('.chart').easyPieChart({
+
+	trackColor: '#fff',
+	scaleColor: '#43DCFF',
+	lineCap: 'round',
+	lineWidth: 30,
+	size: 350,
+	animate: 5000,
+	onStart:$.noop,
+	onStop: $.noop
+});
+
+//WOW.js 선언
+new WOW().init();
+
+
+// animate
+(function($) {
+	
+	'use strict';
+
+	// variables
+	var 
+		$About = $('#ABOUT #Contents .is-animated'),
+		$AboutBack = $('#ABOUT #Contents'),
+		$AboutTitle = $('#ABOUT h2'),
+		$Skill = $('#SKILL .is-animated'),
+		$SkillTitle = $('#SKILL h2'),
+		$SkillClick = $('#SKILL #click'),
+		$SkillChart = $('#SKILL .chart-list'),
+		$ProBack = $('#PROJECT .project-page'),
+		$ProTitle = $('#PROJECT h2'),
+		$Project = $('#PROJECT .is-animated'),
+		$ProImage = $('#PROJECT .desk-image'),
+		$ConTitle = $('#CONTACT h2'),
+		$ConAir = $('#CONTACT .box-air'),
+		$ConBox = $('#CONTACT .con-box'),
+		$Contact = $('#CONTACT .info>li');
+
+	// initialize fullPage
+	$('#fullpage').fullpage({
+	//responsiveWidth: 1024,
+	onLeave: function(index, nextIndex, direction) {
+	
+		// About page animation
+		if( index == 1 && direction == 'down' ) { 
+			$AboutTitle.addClass('animated fadeIn').css({'animation-delay':'0.3s', 'animation-duration':'2.5s'});
+			$AboutBack.addClass('animated tada').css({'animation-delay':'0.8s', 'animation-duration':'2s'});
+			$About.eq(0).addClass('animated bounceInRight').css({'animation-delay':'1.0s', 'animation-duration':'2.5s'}); 
+			$About.eq(1).addClass('animated bounceInLeft').css({'animation-delay':'1.5s', 'animation-duration':'2.5s'});
+		}
+
+		// Skill page animation
+		else if( index == 2 && direction == 'down' ) {
+			$SkillTitle.addClass('animated fadeIn').css({'animation-delay':'0.3s', 'animation-duration':'2.5s'});
+			$Skill.eq(0).addClass('animated fadeInLeft').css('animation-delay', '.6s'); 
+			$Skill.eq(1).addClass('animated fadeInRight').css('animation-delay', '.9s');
+			$Skill.eq(2).addClass('animated fadeInLeft').css('animation-delay', '1.2s');
+			$Skill.eq(3).addClass('animated fadeInRight').css('animation-delay', '1.5s');
+			$Skill.eq(4).addClass('animated fadeInLeft').css('animation-delay', '1.8s');
+			$SkillChart.addClass('animated rollIn').css('animation-duration','2s');
+			$SkillClick.addClass('animated zoomIn').css('animation-delay', '3s');
+		}
+
+		// Project page animation
+		else if( index == 3 && direction == 'down' ) {
+			$ProTitle.addClass('animated fadeIn').css({'animation-delay':'0.3s', 'animation-duration':'2.5s'});
+			$ProBack.addClass('animated fadeIn').css({'animation-delay':'0.8s', 'animation-duration':'2s'});
+			$Project.eq(0).addClass('animated fadeInLeft').css('animation-delay','1s'); 
+			$Project.eq(1).addClass('animated fadeInLeft').css('animation-delay','1.5s');
+			$ProImage.addClass('animated bounceInDown').css({'animation-delay':'2s', 'animation-duration':'2s'});
+		}
+
+		// Contact page animation
+		else if( index == 4 && direction == 'down' ) {
+			$ConTitle.addClass('animated fadeIn').css('animation-delay','0s');
+			$ConBox.addClass('animated bounceInUp').css({'animation-delay':'1.5s', 'animation-duration':'2s'});
+			$ConAir.eq(0).addClass('animated fadeInRight').css( 'animation-duration','5s'); 
+			$ConAir.eq(1).addClass('animated fadeInLeft').css('animation-duration','5s');
+			$Contact.eq(0).addClass('animated fadeInUp').css({'animation-delay':'3s', 'animation-duration':'1s'});
+			$Contact.eq(1).addClass('animated fadeInUp').css({'animation-delay':'3.3s', 'animation-duration':'1s'});
+			$Contact.eq(2).addClass('animated fadeInUp').css({'animation-delay':'3.6s', 'animation-duration':'1s'});
+		}
+	}
+
+	});
+	
+})(jQuery);
