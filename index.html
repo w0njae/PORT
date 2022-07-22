@@ -5,16 +5,8 @@
 	<title>김원재ㅣ웹퍼블리셔ㅣ포트폴리오</title>
 	<link rel="icon" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/master.css" />
-
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-	<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
-	<script type="text/javascript" src="js//scrolloverflow.js"></script>
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script src="js/jquery.easypiechart.min.js"></script>
 </head>
 <body>
-<div id="fullpage">
 	<!-- #menu list -->
 	<ul id="menu">
 		<li data-menuanchor="1Page" class="active"><a href="#1Page">Home</a></li>
@@ -22,11 +14,17 @@
 		<li data-menuanchor="3Page"><a href="#3Page">Skill</a></li>
 		<li data-menuanchor="4Page"><a href="#4Page">Project</a></li>
 		<li data-menuanchor="5Page"><a href="#5Page">Contact</a></li>
+		<li class="hamburger">
+			<span></span>
+        	<span></span>
+        	<span></span>
+		</li>
 	</ul>
+<div id="fullpage">
 	<!-- header start -->
 	<header class="section active" id="section main-box">
 		<!-- 마우스에 반응하는 비행기 -->
-		<div class="parallax">
+		<div class="parallax wow fadeIn" data-wow-duration="5s">
 			<div id="airplane" class="par"></div>
 		</div>
 		<!-- 떠다니는 구름 list -->
@@ -42,25 +40,26 @@
 			<li id="clouds" class="cloud09"></li>
 			<li id="clouds" class="cloud10"></li>
 		</ul>
-		<!-- typing 기능 -->
 		<div id="welcome">
+			<!-- typing 기능 -->
 			<div id="typeStyle"></div>
 			<div id="typeBox"><p>Welcome to my PORTFOLIO</p></div>
 		</div>
-		<div class="scroll">
+		<!-- SCROLL 비행기 -->
+		<div class="scroll wow fadeIn" data-wow-duration="3s" data-wow-delay="1.5s">
 			<a href="#2Page"></a>
 			<span>SCROLL</span>
 		</div>
 	</header>
 	<!-- header end -->
 	<!-- About page start -->
-	<article class="section" id="About" >
+	<article class="section" id="ABOUT" >
 		<h2>About me</h2>
-		<div ID="Contents">
+		<div id="Contents">
 			<!-- Contents 속 흰색 배경 -->
 			<div>
 				<!-- left 박스 -->
-				<div class="con-left">
+				<div class="con-left is-animated">
 					<div>
 						<img src="images/wonjae.png">
 					</div>
@@ -77,7 +76,7 @@
 					</div>
 				</div>
 				<!-- right 박스 -->
-				<div class="con-right">
+				<div class="con-right is-animated">
 					<!-- LICENSE 박스 -->
 					<div ID="LICENSE">
 						<h3>LICENSE</h3>
@@ -126,74 +125,82 @@
 	<article class="section" id="SKILL">
 		<h2>SKILL</h2>
 		<div>
+			<!-- display:none 시키는 tab메뉴 -->
 			<div id="tab">
-				<input type="radio" id="html" name="toggle" checked>
-				<input type="radio" id="css" name="toggle">
-				<input type="radio" id="js" name="toggle">
-				<input type="radio" id="ps" name="toggle">
-				<input type="radio" id="ai" name="toggle">
-				<p id="click">이<br>미<br>지<br>를<br> <br><span>CLICK</span><br>해<br>보<br>세<br>요<br>!</p>
+				<input type="radio" id="skill01" name="toggle" checked>
+				<input type="radio" id="skill02" name="toggle">
+				<input type="radio" id="skill03" name="toggle">
+				<input type="radio" id="skill04" name="toggle">
+				<input type="radio" id="skill05" name="toggle">
+				<!-- 왼쪽에 보여줄 텍스트 -->
+				<p id="click" class="C-click">글<br>씨<br>를<br> <br><span>CLICK</span><br> <br>해<br>보<br>세<br>요<br>!</p>
+				<p id="click" class="M-click">글씨를 <span>CLICK</span>해보세요!</p>
+				<!-- chart-list를 보여줄 button list -->
 				<p id="button">
-					<label for="html"><img src="images/html.png"></label>
-					<label for="css"><img src="images/css.png"></label>
-					<label for="js"><img src="images/java.png"></label>
-					<label for="ps"><img src="images/design.png"></label>
-					<label for="ai"><img src="images/ps.png"></label>
+					<label for="skill01" class="is-animated"><span>Hard Coding</span></label>
+					<label for="skill02" class="is-animated"><span>HTML/CSS</span></label>
+					<label for="skill03" class="is-animated"><span>Javascript & JQuery</span></label>
+					<label for="skill04" class="is-animated"><span>Design Tool</span></label>
+					<label for="skill05" class="is-animated"><span>Communication</span></label>
 				</p>
-		
+				<!-- Hard Coding 차트 -->
 				<div class="chart-list">
 					<ul>
 						<li>
-							<div class="chart chart1" data-percent="50" data-bar-color="#f16529">
-								<span class="title">50%</span>
+							<div class="chart chart1" data-percent="85" data-bar-color="#ff5454">
+								<span class="title">85%</span>
 							</div>
 						</li>
-						<li><h4>HTML</h4></li>
-						<li>시멘틱한 구조와 웹 표준 및 웹 접근성에 준수하는 마크업을 합니다. 웹 표준과 웹 접근성을 준수하는 마크업을 하며 시멘틱 태그를 이용하여 전체 레이아웃을 설계합니다.</li>
+						<li><h4>Hard Coding</h4></li>
+						<li>훈련기간 동안, 일 4~6시간 이상 꾸준히 하드코딩 작업을 했습니다. 알아보기 쉽도록 주석을 달고, 이미지 태그에 alt를 빠짐없이 달며, 오타 없이 꼼꼼하게 공부하였습니다. 부족한 부분은 더 학습하고 여러 번 반복 숙달하려고 노력하고 있습니다.</li>
 					</ul>
 				</div>
+				<!-- HTML/CSS 차트 -->
 				<div class="chart-list">
 					<ul>
 						<li>
-							<div class="chart chart1" data-percent="50" data-bar-color="#2965f1">
-								<span class="title">50%</span>
+							<div class="chart chart1" data-percent="90" data-bar-color="#f16529">
+								<span class="title">90%</span>
 							</div>
 						</li>
-						<li><h4>CSS</h4></li>
-						<li>CSS 속성을 이해하며 디자인 시안에 따른 디자인을 구현할 수 있습니다. 미디어 쿼리를 이해하며 반응형 웹을 제작할 수 있습니다. 최신 트랜드인 flex 기법을 사용할 수 있습니다.</li>
+						<li><h4>HTML/CSS</h4></li>
+						<li>웹 표준과 웹 접근성을 준수하는 마크업을 하며 시멘틱 태그를 이용하여 전체 레이아웃을 설계합니다. CSS 속성을 이해하며 디자인 시안에 따른 디자인을 구현할 수 있습니다. 미디어 쿼리를 이해하며 반응형 웹을 제작할 수 있습니다. float과 flex 기법을 상황에 따라 사용할 수 있습니다.</li>
 					</ul>
 				</div>
+				<!-- JS, JQ 차트 -->
 				<div class="chart-list">
 					<ul>
 						<li>
-							<div class="chart chart1" data-percent="50" data-bar-color="#ffd83a">
-								<span class="title">50%</span>
+							<div class="chart chart1" data-percent="70" data-bar-color="#ffd83a">
+								<span class="title">70%</span>
 							</div>
 						</li>
-						<li><h4>Javascript / JQuery</h4></li>
-						<li>이벤트 메소드를 사용해 웹 퍼블리싱에 필요한 이미지 슬라이드, 내비게이션, 탭 메뉴 등 기능을 구현할 수 있습니다. 또한 다양한 플로그인을 활용하여 제작이 가능합니다.</li>
+						<li><h4>Javascript & JQuery</h4></li>
+						<li>이벤트 메소드를 사용해 웹 퍼블리싱에 필요한 이미지 슬라이드, 내비게이션, 탭 메뉴 등 기능을 구현할 수 있습니다. 또한 제이쿼리의 다양한 플로그인을 활용 및 수정, 편집을 통해 필요한 기능을 구현할 수 있습니다.</li>
 					</ul>
 				</div>
+				<!-- 디자인 툴 차트 -->
 				<div class="chart-list">
 					<ul>
 						<li>
-							<div class="chart chart1" data-percent="50" data-bar-color="#31a8ff">
-								<span class="title">50%</span>
+							<div class="chart chart1" data-percent="80" data-bar-color="#31a8ff">
+								<span class="title">75%</span>
 							</div>
 						</li>
-						<li><h4>Photoshop / illustrator</h4></li>
-						<li>가나다</li>
+						<li><h4>Photoshop & illustrator</h4></li>
+						<li>시안 디자인 및 이미지를 특정한 상황에 맞게 편집, 배치 할 수 있습니다. 펜 툴을 이용하여 다양한 이미지를 제작할 수 있으며, 포토샵과 일러스트 두 프로그램을 동시에 사용하는 것에 익숙합니다.</li>
 					</ul>
 				</div>
+				<!-- 커뮤니케이션 차트 -->
 				<div class="chart-list">
 					<ul>
 						<li>
-							<div class="chart chart1" data-percent="50" data-bar-color="#ff9a00">
-								<span class="title">50%</span>
+							<div class="chart chart1" data-percent="85" data-bar-color="#52FF62">
+								<span class="title">85%</span>
 							</div>
 						</li>
-						<li><h4>ppt 한글</h4></li>
-						<li>가나다</li>
+						<li><h4>Communication</h4></li>
+						<li>인사성 밝고, 새로운 환경에 잘 적응하며 독단적으로 나서기보다는 원활한 커뮤니케이션을 통해 상대의 의견을 존중하고 배려합니다.</li>
 					</ul>
 				</div>
 			</div>
@@ -201,11 +208,156 @@
 	</article>
 	<!-- SKILL page end -->
 	<!-- PROJECT page star -->
-	<article class="section" id="PROJECT"><h2>PROJECT</h2>
-		<div class="slide active"><h3>MENU1</h3></div>
-		<div class="slide"><h3>MENU2</h3></div>
-		<div class="slide"><h3>MENU3</h3></div>
-		<div class="slide"><h3>MENU4</h3></div>
+	<article class="section" id="PROJECT">
+		<h2>PROJECT</h2>
+		<div class="slide active">
+			<!-- 흰색 배경 박스 -->
+			<div class="project-page">
+				<div>
+					<!-- 좌측 텍스트 -->
+					<div class="project-text" id="CODEGO">
+						<div class="is-animated">
+							<div>
+								<h4>1.<br>CODEGO</h4>
+								<span>renewal site</span> <span>responsive web</span>
+							</div>
+							<div>
+								<ul>
+									<li><span>사용프로그램</span>HTML, CSS, JAVASCRIPT/JQUERY, PHOTOSHOP</li>
+									<li><span>제작기간</span>8일</li>
+									<li><span>참여도</span>100%</li>
+									<li><span>페이지 수</span>3</li>
+								</ul>
+							</div>
+						</div>
+						<div class="is-animated">
+							<p><span>CODEGO?</span>
+								코드고는 코딩과 프로그래밍 언어가 낯설고 접해보지 못한 사람들을 위해 다양한 기초 및 입문 강의들로 구성되어 있으며 추천 강의와 로드맵을 통하여 입문자들도 쉽게 참여할 수 있습니다.</p>
+							<ul id="VIEW">
+								<li><a href="http://wonjae.dothome.co.kr/CODEGO/main.html" target="_blank">VIEW MAIN</a></li>
+								<li><a href="http://wonjae.dothome.co.kr/CODEGO/lecture.html" target="_blank">VIEW SUB1</a></li>
+								<li><a href="http://wonjae.dothome.co.kr/CODEGO/roadmap.html" target="_blank">VIEW SUB2</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 우측 이미지 -->
+					<div class="desk-image">
+						<img src="images/codego.png">
+						<a href="http://wonjae.dothome.co.kr/CODEGO/main.html" target="_blank">VIEW SITE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<!-- 흰색 배경 박스 -->
+			<div class="project-page">
+				<div>
+					<!-- 좌측 텍스트 -->
+					<div class="project-text" id="PLAB">
+						<div class="is-animated">
+							<div>
+								<h4>2.<br>PLAB</h4>
+								<span>renewal site</span> <span>responsive web</span>
+							</div>
+							<div>
+								<ul>
+									<li><span>사용프로그램</span>HTML, CSS, JAVASCRIPT/JQUERY, PHOTOSHOP, ILLUSTRATOR</li>
+									<li><span>제작기간</span>3일</li>
+									<li><span>참여도</span>100%</li>
+									<li><span>페이지 수</span>1</li>
+								</ul>
+							</div>
+						</div>
+						<div class="is-animated">
+							<p><span>PLAB?</span>
+								플랩은 풋살 소셜 매칭 플랫폼으로 풋살을 즐기고 싶어 하는 남녀노소 누구든 가능하며, 하고 싶은 플랩 풋살장에 신청만 하면 공, 조끼, 풋살화, 심판까지 준비 되어있어 편리하게 이용할 수 있는 시스템입니다.</p>
+							<ul id="VIEW">
+								<li><a href="https://w0njae.github.io/PLAB/" target="_blank">VIEW MAIN</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 우측 이미지 -->
+					<div class="desk-image">
+						<img src="images/plab.png">
+						<a href="https://w0njae.github.io/PLAB/" target="_blank">VIEW SITE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<!-- 흰색 배경 박스 -->
+			<div class="project-page">
+				<div>
+					<!-- 좌측 텍스트 -->
+					<div class="project-text" id="INDION">
+						<div class="is-animated">
+							<div>
+								<h4>3.<br>INDION</h4>
+								<span>renewal site</span>
+							</div>
+							<div>
+								<ul>
+									<li><span>사용프로그램</span>HTML, CSS, PHOTOSHOP</li>
+									<li><span>제작기간</span>10일</li>
+									<li><span>참여도</span>100%</li>
+									<li><span>페이지 수</span>3</li>
+								</ul>
+							</div>
+						</div>
+						<div class="is-animated">
+							<p><span>INDION?</span>
+								플랩은 풋살 소셜 매칭 플랫폼으로 풋살을 즐기고 싶어 하는 남녀노소 누구든 가능하며, 하고 싶은 플랩 풋살장에 신청만 하면 공, 조끼, 풋살화, 심판까지 준비 되어있어 편리하게 이용할 수 있는 시스템입니다.</p>
+							<ul id="VIEW">
+								<li><a href="#" target="_blank">VIEW MAIN</a></li>
+								<li><a href="#" target="_blank">VIEW Login</a></li>
+								<li><a href="#" target="_blank">VIEW SignUp</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 우측 이미지 -->
+					<div class="desk-image">
+						<img src="images/plab.png">
+						<a href="#" target="_blank">VIEW SITE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<!-- 흰색 배경 박스 -->
+			<div class="project-page">
+				<div>
+					<!-- 좌측 텍스트 -->
+					<div class="project-text" id="LOL">
+						<div class="is-animated">
+							<div>
+								<h4>4.<br>LoL</h4>
+								<span>renewal site</span> <span>responsive web</span>
+							</div>
+							<div>
+								<ul>
+									<li><span>사용프로그램</span>HTML, CSS, JAVASCRIPT/JQUERY, PHOTOSHOP, ILLUSTRATOR</li>
+									<li><span>제작기간</span>3일</li>
+									<li><span>참여도</span>100%</li>
+									<li><span>페이지 수</span>1</li>
+								</ul>
+							</div>
+						</div>
+						<div class="is-animated">
+							<p><span>LOL?</span>
+								플랩은 풋살 소셜 매칭 플랫폼으로 풋살을 즐기고 싶어 하는 남녀노소 누구든 가능하며, 하고 싶은 플랩 풋살장에 신청만 하면 공, 조끼, 풋살화, 심판까지 준비 되어있어 편리하게 이용할 수 있는 시스템입니다.</p>
+							<ul id="VIEW">
+								<li><a href="#" target="_blank">VIEW MAIN</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 우측 이미지 -->
+					<div class="desk-image">
+						<img src="images/plab.png">
+						<a href="#" target="_blank">VIEW SITE</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</article>
 	<!-- PROJECT page end -->
 	<!-- CONTACT page start -->
@@ -220,21 +372,22 @@
 					<p></p>
 				</div>
 				<!-- contact-text 박스 내용 -->
-				<div>
+				<div class="con-box">
 					<div>
 						<h3>끝까지 봐주셔서 감사합니다.</h3>
 						<p>항상 배우려는 자세와 겸손한 마음으로 <br> 어제보다 오늘 더 성장하는 <span>김원재</span>가 되겠습니다.</p>
 					</div>
+					<!-- 연락 정보 -->
 					<ul class="info">
 						<li>
 							<p></p>
 							010 3896 0873
 						</li>
 						<li><p></p>
-							ewew160@gmail.com
+							ewew160
 						</li>
 						<li><p></p>
-							ewew160
+							ewew160@naver.com
 						</li>
 					</ul>
 				</div>
@@ -257,20 +410,14 @@
 	</article>
 	<!-- CONTACT page end -->
 </div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+	<script type="text/javascript" src="js//scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="js/script.js"></script>
 
-<script src="js/script.js"></script>
-<script>
-	$('.chart').easyPieChart({
-
-		trackColor: '#fff',
-		scaleColor: '#43DCFF',
-		lineCap: 'round',
-		lineWidth: 30,
-		size: 300,
-		animate: 5000,
-		onStart:$.noop,
-		onStop: $.noop
-	});
-</script>
 </body>
 </html>
