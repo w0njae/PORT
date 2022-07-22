@@ -5,6 +5,8 @@
  *
  * Copyright (C) 2015 alvarotrigo.com - A project by Alvaro Trigo
  */
+
+
 (function(global, factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
@@ -101,21 +103,21 @@
         // Creating some defaults, extending them with any options that were provided
         options = $.extend({
             //navigation
-            menu: false,
-            anchors:[],
+            menu: '#menu', //메뉴
+            anchors:['1Page', '2Page', '3Page', '4Page', '5Page'], //메뉴 이름
             lockAnchors: false,
-            navigation: false,
-            navigationPosition: 'right',
-            navigationTooltips: [],
+            navigation: true, //우측 네비게이션
+            navigationPosition: 'right', //우측 네비게이션 위치
+            navigationTooltips: ['Home', 'About', 'Skill', 'Project', 'Contact'], //우측 네비게이션 이름
             showActiveTooltip: false,
-            slidesNavigation: false,
-            slidesNavPosition: 'bottom',
-            scrollBar: false,
+            slidesNavigation: true, //slide메뉴 네비게이션
+            slidesNavPosition: 'bottom',//slide메뉴 네비게이션 위치
+            scrollBar: false, //페이지 스크롤바
             hybrid: false,
 
             //scrolling
             css3: true,
-            scrollingSpeed: 700,
+            scrollingSpeed: 800,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 1000,
