@@ -10,7 +10,7 @@ video{margin:0; padding:0;}
 /*��� ��ҵ��� �̷��� ���� 0���� �ʱ�ȭ�����־� ��� ���������� ������ �ִ� ������ ������ ����� ����ǵ��� �մϴ�.
 ��ü ������ *�� ����ϴ� �ͺ��� �̷��� ��ϵ��� �����ϸ� ������ �ö󰩴ϴ�.*/
 
-article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block;}
+article,aside,details,figcaption,figure,footer,header,menu,section{display:block;}
 /*HTML5�� ���� �߰��� ��ҵ��� ��� ��ҷ� �νĵ��� �ʽ��ϴ�. �� ��ҵ��� �翬�� ����� ��찡 ��κ��̹Ƿ� �װ͵��� �Ѳ����� �����ϴ� ���Դϴ�.*/
 
 li{list-style-type:none;}
