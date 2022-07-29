@@ -34,18 +34,57 @@ $(document).ready(function() {
 	});
 });
 
-//skill page 원형 차트
-$('.chart').easyPieChart({
-
-	trackColor: '#fff',
-	scaleColor: '#43DCFF',
-	lineCap: 'round',
-	lineWidth: 30,
-	size: 350,
-	animate: 5000,
-	onStart:$.noop,
-	onStop: $.noop
+$(document).scrollTop();
+$(window).scroll(function () { 
+	var scrollValue = $(document).scrollTop(); 
+    console.log(scrollValue); 
 });
+
+//skill page 원형 차트
+	
+
+
+
+$(window).resize(function(){ 
+	if ($(window).width() > 767) {
+		$('.chart').easyPieChart({
+			trackColor: '#fff',
+			scaleColor: '#43DCFF',
+			lineCap: 'round',
+			lineWidth: 30,
+			size: 350,
+			animate: 5000,
+			onStart:$.noop,
+			onStop: $.noop
+		});
+	 }
+	 else if ($(window).width() > 381) {
+		$('.chart').easyPieChart({
+			trackColor: '#fff',
+			scaleColor: '#43DCFF',
+			lineCap: 'round',
+			lineWidth: 20,
+			size: 200,
+			animate: 5000,
+			onStart:$.noop,
+			onStop: $.noop
+		});
+	 }
+	 else {
+		$('.chart').easyPieChart({
+			trackColor: '#fff',
+			scaleColor: '#43DCFF',
+			lineCap: 'round',
+			lineWidth: 15,
+			size: 150,
+			animate: 5000,
+			onStart:$.noop,
+			onStop: $.noop
+		});
+	 }
+	}).resize(); 
+
+
 
 //WOW.js 선언
 new WOW().init();
@@ -123,3 +162,15 @@ new WOW().init();
 	});
 	
 })(jQuery);
+
+/*.allMenu_menu 클릭했을때 네비게이션 항목들*/
+$('.hamburger').click(function(){ //메뉴버튼 클릭시
+	$('nav').slideToggle('slow'); //.gnb 슬라이드토글
+});
+
+/*햄버거 메뉴 클릭 시 햄버거가 X 모양으로 변경*/
+const menuTrigger = document.querySelector('.hamburger');
+
+menuTrigger.addEventListener('click', (event) => {
+event.currentTarget.classList.toggle('active-1');
+});
