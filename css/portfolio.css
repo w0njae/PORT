@@ -250,7 +250,7 @@ nav{position: relative;}
 #Contents{
 	width:80%; height: 65%;
 	margin:0 auto;
-	background:rgba(255,255,255, 0.8);
+	background:rgba(255,255,255, 0.9);
 	border-radius: 100px;
 	overflow: hidden;
 	position: relative;
@@ -657,7 +657,7 @@ footer>div{margin:25px 0;}
 		width: 100vw;
 		height: 100vh;
 		z-index: 100;
-		background:rgba(255,255,255, 0.8);
+		background:rgba(255,255,255, 0.9);
 	}
 	header{
 		position:fixed;
@@ -1288,7 +1288,7 @@ footer>div{margin:25px 0;}
 		width: 100vw;
 		height: 100vh;
 		z-index: 100;
-		background:rgba(255,255,255, 0.8);
+		background:rgba(255,255,255, 0.9);
 	}
 	header{
 		position:fixed;
