@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko-kr">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>김원재ㅣ웹퍼블리셔ㅣ포트폴리오</title>
 	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/master.css" />
+	<link rel="stylesheet" href="css/master.css" />
 </head>
 <body>
-	<!-- #menu list -->
-	<ul id="menu">
-		<li data-menuanchor="1Page" class="active"><a href="#1Page">Home</a></li>
-		<li data-menuanchor="2Page"><a href="#2Page">About me</a></li>
-		<li data-menuanchor="3Page"><a href="#3Page">Skill</a></li>
-		<li data-menuanchor="4Page"><a href="#4Page">Project</a></li>
-		<li data-menuanchor="5Page"><a href="#5Page">Contact</a></li>
-		<li class="hamburger">
+	<header>
+		<h1><a href="#1Page">김원재</a></h1>
+		<!-- #menu list -->
+		<nav>
+			<ul id="menu">
+				<li data-menuanchor="1Page" class="active"><a href="#1Page">Home</a></li>
+				<li data-menuanchor="2Page"><a href="#2Page">About</a></li>
+				<li data-menuanchor="3Page"><a href="#3Page">Skill</a></li>
+				<li data-menuanchor="4Page"><a href="#4Page">Project</a></li>
+				<li data-menuanchor="5Page"><a href="#5Page">Contact</a></li>
+			</ul>
+		</nav>
+		<button class="hamburger">
 			<span></span>
-        	<span></span>
-        	<span></span>
-		</li>
-	</ul>
+			<span></span>
+			<span></span>
+		</button>
+	</header>
 <div id="fullpage">
 	<!-- header start -->
-	<header class="section active" id="section main-box">
+	<article class="section active" id="section main-box">
 		<!-- 마우스에 반응하는 비행기 -->
 		<div class="parallax wow fadeIn" data-wow-duration="5s">
 			<div id="airplane" class="par"></div>
@@ -50,18 +57,18 @@
 			<a href="#2Page"></a>
 			<span>SCROLL</span>
 		</div>
-	</header>
+	</article>
 	<!-- header end -->
 	<!-- About page start -->
 	<article class="section" id="ABOUT" >
-		<h2>About me</h2>
+		<h2>ABOUT</h2>
 		<div id="Contents">
 			<!-- Contents 속 흰색 배경 -->
 			<div>
 				<!-- left 박스 -->
 				<div class="con-left is-animated">
 					<div>
-						<img src="images/wonjae.png">
+						<img src="images/wonjae.png" alt="김원재">
 					</div>
 					<!-- PROFILE 박스 -->
 					<div ID="PROFILE">
@@ -200,7 +207,7 @@
 							</div>
 						</li>
 						<li><h4>Communication</h4></li>
-						<li>인사성 밝고, 새로운 환경에 잘 적응하며 독단적으로 나서기보다는 원활한 커뮤니케이션을 통해 상대의 의견을 존중하고 배려합니다.</li>
+						<li>인사성 밝고, 새로운 환경에 잘 적응하며 독단적으로 나서기보다는 다른 사람과의 원활한 커뮤니케이션을 통해 상대의 의견을 존중하고 배려하기 위해서 노력합니다.</li>
 					</ul>
 				</div>
 			</div>
@@ -218,13 +225,13 @@
 					<div class="project-text" id="CODEGO">
 						<div class="is-animated">
 							<div>
-								<h4>1.<br>CODEGO</h4>
+								<h4>1. CODEGO</h4>
 								<span>renewal site</span> <span>responsive web</span>
 							</div>
 							<div>
 								<ul>
-									<li><span>사용프로그램</span>HTML, CSS, JAVASCRIPT/JQUERY, PHOTOSHOP</li>
-									<li><span>제작기간</span>8일</li>
+									<li><span>사용프로그램</span>HTML, CSS, JS/JQuery, Photoshop</li>
+									<li><span>제작기간</span>10일</li>
 									<li><span>참여도</span>100%</li>
 									<li><span>페이지 수</span>3</li>
 								</ul>
@@ -232,7 +239,7 @@
 						</div>
 						<div class="is-animated">
 							<p><span>CODEGO?</span>
-								코드고는 코딩과 프로그래밍 언어가 낯설고 접해보지 못한 사람들을 위해 다양한 기초 및 입문 강의들로 구성되어 있으며 추천 강의와 로드맵을 통하여 입문자들도 쉽게 참여할 수 있습니다.</p>
+								코드고는 코딩과 프로그래밍 언어가 낯설고 접해보지 못한 사람들을 위해 다양한 기초 및 입문 강의들로 구성되어 있으며 추천 강의와 로드맵을 통하여 입문자들도 쉽게 참여할 수 있습니다. 페이지는 메인, 강의, 로드맵 총 3개로 제작하였고 반응형으로 제작하였습니다.</p>
 							<ul id="VIEW">
 								<li><a href="http://wonjae.dothome.co.kr/CODEGO/main.html" target="_blank">VIEW MAIN</a></li>
 								<li><a href="http://wonjae.dothome.co.kr/CODEGO/lecture.html" target="_blank">VIEW SUB1</a></li>
@@ -242,7 +249,7 @@
 					</div>
 					<!-- 우측 이미지 -->
 					<div class="desk-image">
-						<img src="images/codego.png">
+						<img src="images/codego.png" alt="코드고">
 						<a href="http://wonjae.dothome.co.kr/CODEGO/main.html" target="_blank">VIEW SITE</a>
 					</div>
 				</div>
@@ -256,13 +263,13 @@
 					<div class="project-text" id="PLAB">
 						<div class="is-animated">
 							<div>
-								<h4>2.<br>PLAB</h4>
+								<h4>2. PLAB</h4>
 								<span>renewal site</span> <span>responsive web</span>
 							</div>
 							<div>
 								<ul>
-									<li><span>사용프로그램</span>HTML, CSS, JAVASCRIPT/JQUERY, PHOTOSHOP, ILLUSTRATOR</li>
-									<li><span>제작기간</span>3일</li>
+									<li><span>사용프로그램</span>HTML, CSS, JS/JQuery, Photoshop, Illustrator</li>
+									<li><span>제작기간</span>5일</li>
 									<li><span>참여도</span>100%</li>
 									<li><span>페이지 수</span>1</li>
 								</ul>
@@ -270,7 +277,7 @@
 						</div>
 						<div class="is-animated">
 							<p><span>PLAB?</span>
-								플랩은 풋살 소셜 매칭 플랫폼으로 풋살을 즐기고 싶어 하는 남녀노소 누구든 가능하며, 하고 싶은 플랩 풋살장에 신청만 하면 공, 조끼, 풋살화, 심판까지 준비 되어있어 편리하게 이용할 수 있는 시스템입니다.</p>
+								플랩은 풋살 소셜 매칭 플랫폼으로 풋살을 즐기고 싶어 하는 남녀노소 누구든 가능하며, 하고 싶은 플랩 풋살장에 신청만 하면 공, 조끼, 풋살화, 심판까지 준비 되어있어 편리하게 이용할 수 있는 시스템이며 모바일과 테블릿으로도 쉽게 참여할 수 있도록 반응형으로 제작하였습니다.</p>
 							<ul id="VIEW">
 								<li><a href="https://w0njae.github.io/PLAB/" target="_blank">VIEW MAIN</a></li>
 							</ul>
@@ -278,7 +285,7 @@
 					</div>
 					<!-- 우측 이미지 -->
 					<div class="desk-image">
-						<img src="images/plab.png">
+						<img src="images/plab.png" alt="플랩">
 						<a href="https://w0njae.github.io/PLAB/" target="_blank">VIEW SITE</a>
 					</div>
 				</div>
@@ -292,13 +299,13 @@
 					<div class="project-text" id="INDION">
 						<div class="is-animated">
 							<div>
-								<h4>3.<br>INDION</h4>
+								<h4>3. INDION</h4>
 								<span>renewal site</span>
 							</div>
 							<div>
 								<ul>
-									<li><span>사용프로그램</span>HTML, CSS, PHOTOSHOP</li>
-									<li><span>제작기간</span>10일</li>
+									<li><span>사용프로그램</span>HTML, CSS, Photoshop</li>
+									<li><span>제작기간</span>8일</li>
 									<li><span>참여도</span>100%</li>
 									<li><span>페이지 수</span>3</li>
 								</ul>
@@ -306,18 +313,18 @@
 						</div>
 						<div class="is-animated">
 							<p><span>INDION?</span>
-								플랩은 풋살 소셜 매칭 플랫폼으로 풋살을 즐기고 싶어 하는 남녀노소 누구든 가능하며, 하고 싶은 플랩 풋살장에 신청만 하면 공, 조끼, 풋살화, 심판까지 준비 되어있어 편리하게 이용할 수 있는 시스템입니다.</p>
+								인디온은 html과 css를 배운 후 처음 만든 페이지로 부족한 점이 많으며 정적인 웹사이트 입니다. 또한 반응형이 지원되지 않고 메인, 로그인, 회원가입 페이지까지 제작하였습니다. 대중적인 가요보다는 인디밴드나 유명하지 않은 가수들을 위한 사이트로 인디음악을 원하는 유저들에게 유용한 사이트 입니다.</p>
 							<ul id="VIEW">
-								<li><a href="#" target="_blank">VIEW MAIN</a></li>
-								<li><a href="#" target="_blank">VIEW Login</a></li>
-								<li><a href="#" target="_blank">VIEW SignUp</a></li>
+								<li><a href="https://w0njae.github.io/INDION/" target="_blank">VIEW MAIN</a></li>
+								<li><a href="https://w0njae.github.io/INDION/html/login.html" target="_blank">VIEW Login</a></li>
+								<li><a href="https://w0njae.github.io/INDION/html/signup.html" target="_blank">VIEW SignUp</a></li>
 							</ul>
 						</div>
 					</div>
 					<!-- 우측 이미지 -->
 					<div class="desk-image">
-						<img src="images/plab.png">
-						<a href="#" target="_blank">VIEW SITE</a>
+						<img src="images/indion.png" alt="인디온">
+						<a href="https://w0njae.github.io/INDION/" target="_blank">VIEW SITE</a>
 					</div>
 				</div>
 			</div>
@@ -330,13 +337,13 @@
 					<div class="project-text" id="LOL">
 						<div class="is-animated">
 							<div>
-								<h4>4.<br>LoL</h4>
+								<h4>4. LoL</h4>
 								<span>renewal site</span> <span>responsive web</span>
 							</div>
 							<div>
 								<ul>
-									<li><span>사용프로그램</span>HTML, CSS, JAVASCRIPT/JQUERY, PHOTOSHOP, ILLUSTRATOR</li>
-									<li><span>제작기간</span>3일</li>
+									<li><span>사용프로그램</span>HTML, CSS, JS/JQuery, Ilustrator</li>
+									<li><span>제작기간</span>5일</li>
 									<li><span>참여도</span>100%</li>
 									<li><span>페이지 수</span>1</li>
 								</ul>
@@ -344,16 +351,16 @@
 						</div>
 						<div class="is-animated">
 							<p><span>LOL?</span>
-								플랩은 풋살 소셜 매칭 플랫폼으로 풋살을 즐기고 싶어 하는 남녀노소 누구든 가능하며, 하고 싶은 플랩 풋살장에 신청만 하면 공, 조끼, 풋살화, 심판까지 준비 되어있어 편리하게 이용할 수 있는 시스템입니다.</p>
+								롤은 많은 사람과 다양한 연령층이 좋아하는 게임이며 게임 사이트이기 때문에 생동감 있는 동적인 모션들을 많이 담을 수 있도록 하였고 기본 jQuery 및 다양한 플러그인을 사용하여 리뉴얼하였고 반응형으로 제작하였습니다.</p>
 							<ul id="VIEW">
-								<li><a href="#" target="_blank">VIEW MAIN</a></li>
+								<li><a href="https://w0njae.github.io/LOL/" target="_blank">VIEW MAIN</a></li>
 							</ul>
 						</div>
 					</div>
 					<!-- 우측 이미지 -->
 					<div class="desk-image">
-						<img src="images/plab.png">
-						<a href="#" target="_blank">VIEW SITE</a>
+						<img src="images/LOL.png" alt="롤">
+						<a href="https://w0njae.github.io/LOL/" target="_blank">VIEW SITE</a>
 					</div>
 				</div>
 			</div>
@@ -418,6 +425,5 @@
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="js/script.js"></script>
-
 </body>
 </html>
