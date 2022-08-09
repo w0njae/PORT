@@ -1180,13 +1180,7 @@ footer>div{margin:25px 0;}
 		margin:0 auto;
 		display:flex;
 		justify-content: space-between;}
-	.info>li{font-size:20px; cursor: pointer; text-shadow: 1px 1px #848484;}
-	.info>li:hover p{animation:contact-mv 1s infinite ease;}
-	@keyframes contact-mv{
-		0%{transform:translate(0px,0px);}
-		50%{transform:translate(0px,-7.5px);}
-		1000%{transform:translate(0px,-15px);}
-	}
+	.info>li{font-size:20px; text-shadow: 1px 1px #848484;}
 	.info>li>p{
 		width:45px;
 		height: 45px;
@@ -1795,13 +1789,7 @@ footer>div{margin:25px 0;}
 			margin:0 auto;
 			display:flex;
 			justify-content: space-between;}
-		.info>li{font-size:15px; cursor: pointer; text-shadow: 1px 1px #848484;}
-		.info>li:hover p{animation:contact-mv 1s infinite ease;}
-		@keyframes contact-mv{
-			0%{transform:translate(0px,0px);}
-			50%{transform:translate(0px,-7.5px);}
-			1000%{transform:translate(0px,-15px);}
-		}
+		.info>li{font-size:15px; text-shadow: 1px 1px #848484;}
 		.info>li>p{
 			width:45px;
 			height: 45px;
@@ -2414,13 +2402,7 @@ footer>div{margin:25px 0;}
 			margin:0 auto;
 			display:flex;
 			justify-content: space-between;}
-		.info>li{font-size:15px; cursor: pointer; text-shadow: 1px 1px #848484;}
-		.info>li:hover p{animation:contact-mv 1s infinite ease;}
-		@keyframes contact-mv{
-			0%{transform:translate(0px,0px);}
-			50%{transform:translate(0px,-7.5px);}
-			1000%{transform:translate(0px,-15px);}
-		}
+		.info>li{font-size:15px; text-shadow: 1px 1px #848484;}
 		.info>li>p{
 			width:45px;
 			height: 45px;
