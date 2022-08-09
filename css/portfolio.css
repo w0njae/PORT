@@ -1503,7 +1503,7 @@ footer>div{margin:25px 0;}
 		}
 		#Contents>div>div ul{margin-top:10px;}
 		#Contents>div>div ul>li{font-size:14px;}
-		.con-left{width:100%; display:flex; justify-content: space-between; flex-direction: column;}
+		.con-left{width:100%; display:flex; justify-content: space-between; flex-direction: column; height:49%}
 		.con-left>div:nth-child(1){width:50%; margin:0 auto; box-shadow:1px 1px 20px #43DCFF; border-radius: 50%; overflow: hidden;}
 		.con-left>div:nth-child(1)>img{
 			width:100%; height:100%;
@@ -1518,7 +1518,7 @@ footer>div{margin:25px 0;}
 		
 		.con-right{
 			width:80%; margin:auto 0;
-			height: 65%;
+			height: 50%;
 			display:flex;
 			flex-direction: column;
 			justify-content: space-around;
