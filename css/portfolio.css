@@ -2121,7 +2121,7 @@ footer>div{margin:25px 0;}
 		}
 		#Contents>div>div ul{margin-top:10px;}
 		#Contents>div>div ul>li{font-size:14px;}
-		.con-left{width:90%; display:flex; justify-content: space-between;}
+		.con-left{width:90%; display:flex; justify-content: space-between; height:auto;}
 		.con-left>div:nth-child(1){width:45%; box-shadow:1px 1px 30px #43DCFF; border-radius: 50%; overflow: hidden;}
 		.con-left>div:nth-child(1)>img{
 			width:100%; height:100%;
@@ -2136,7 +2136,7 @@ footer>div{margin:25px 0;}
 		
 		.con-right{
 			width:90%; margin:auto 0;
-			height: 90%;
+			height: auto;
 			display:flex;
 			flex-direction: column;
 			justify-content: space-around;
