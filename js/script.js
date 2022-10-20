@@ -102,7 +102,7 @@ new WOW().init();
 		$AboutTitle = $('#ABOUT h2'),
 		$Skill = $('#SKILL .is-animated'),
 		$SkillTitle = $('#SKILL h2'),
-		$SkillClick = $('#SKILL #click'),
+		$SkillClick = $('#SKILL .click'),
 		$SkillChart = $('#SKILL .chart-list'),
 		$ProBack = $('#PROJECT .project-page'),
 		$ProTitle = $('#PROJECT h2'),
