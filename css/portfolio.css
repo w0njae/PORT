@@ -8,19 +8,19 @@ body{ color:#4e4e4e; background-image:linear-gradient(180deg, #43DCFF 0%, #a9eff
 #LOL>div>div:first-child{border-color:#f5d56e;}
 
 #CODEGO>div>div>span,
-#CODEGO #VIEW>li>a:before,
+#CODEGO .VIEW>li>a:before,
 #CODEGO~.desk-image>a:before{background:#38e5ff;}
 
 #PLAB>div>div>span,
-#PLAB #VIEW>li>a:before,
+#PLAB .VIEW>li>a:before,
 #PLAB~.desk-image>a:before{background:#00993a;}
 
 #INDION>div>div>span,
-#INDION #VIEW>li>a:before,
+#INDION .VIEW>li>a:before,
 #INDION~.desk-image>a:before{background: linear-gradient(to right bottom, #565ca8, #985ea3);}
 
 #LOL>div>div>span,
-#LOL #VIEW>li>a:before,
+#LOL .VIEW>li>a:before,
 #LOL~.desk-image>a:before{background:#f5d56e;}
 
 #CODEGO>div>p>span{color:#38e5ff;}
@@ -33,7 +33,7 @@ body{ color:#4e4e4e; background-image:linear-gradient(180deg, #43DCFF 0%, #a9eff
 	position:absolute;
 	z-index: 10;
 }
-
+.main-box{position: relative;}
 
 /* 데스크탑 사이즈 */
 @media screen and (min-width:1024px){
@@ -124,21 +124,21 @@ nav{position: relative;}
 	height:100%;
 	background:url("../images/airplane.png")no-repeat center center;
 }
-#main-box{position: relative;}
 .parallax{width:500px; height: 400px; z-index: 99; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
 .par {
     position: absolute;
 	/* transform: translate(-50%, -50%); */
   }
 .cloud-box{position:absolute; width:100%; height: 100%; top:0;}
-
-#clouds{
-	position:absolute; opacity: 0.7;
+.cloud-box>li{
 	animation-timing-function: ease;
 	animation-iteration-count: infinite;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
+
+.clouds{position:absolute; opacity: 0.7;}
+
 @keyframes cloud-mv01{
     0%{transform:translate(0px,0px);}
     50%{transform:translate(0px,50px);}
@@ -391,13 +391,13 @@ nav{position: relative;}
 	transition: 1.5s;
 }
 
-#click{position: absolute; top:50%; left:-7%;
+.click{position: absolute; top:50%; left:-7%;
 	transform: translateY(-50%);
 	color:rgba(255,255,255, 0.8);
 	text-shadow: 1px 1px #848484;
 }
 .M-click{display: none;}
-#click>span{font-size:20px; color:#f4ff8c;}
+.click>span{font-size:20px; color:#f4ff8c;}
 
 /*PROJECT page style*/
 
@@ -449,8 +449,8 @@ nav{position: relative;}
 }
 .project-text>div>div>ul>li>span{width:100px; display:inline-block;}
 
-#VIEW>li{margin: 10px;}
-#VIEW>li>a{
+.VIEW>li{margin: 10px;}
+.VIEW>li>a{
 	font-size:20px;
 	padding: 5px 10px;
 	display: block;
@@ -459,9 +459,9 @@ nav{position: relative;}
 	position: relative;
 	z-index: 2;
 }
-#VIEW>li>a:hover,
+.VIEW>li>a:hover,
 .desk-image>a:hover{color:#fff;}
-#VIEW>li>a:before{
+.VIEW>li>a:before{
 	position: absolute;
 	content: '';
 	top:0; left:0;
@@ -471,8 +471,8 @@ nav{position: relative;}
 	z-index: -3;
 }
 
-#VIEW>li:first-child{margin-left:0;}
-#VIEW>li>a:hover:before,
+.VIEW>li:first-child{margin-left:0;}
+.VIEW>li>a:hover:before,
 .desk-image>a:hover:before
 {width: 100%;}
 
@@ -747,7 +747,6 @@ footer>div{margin:25px 0;}
 		height:100%;
 		background:url("../images/airplane.png")no-repeat center center;
 	}
-	#main-box{position: relative;}
 	.parallax{width:500px; height: 400px; z-index: 99; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
 	.par {
 		position: absolute;
@@ -755,13 +754,14 @@ footer>div{margin:25px 0;}
 	  }
 	.cloud-box{position:absolute; width:100%; height: 100%; top:0;}
 	
-	#clouds{
-		position:absolute; opacity: 0.7;
+	.cloud-box>li{
 		animation-timing-function: ease;
 		animation-iteration-count: infinite;
 		background-position: 0 0;
 		background-repeat: no-repeat;
 	}
+	
+	.clouds{position:absolute; opacity: 0.7;}
 	@keyframes cloud-mv01{
 		0%{transform:translate(0px,0px);}
 		50%{transform:translate(0px,50px);}
@@ -1008,14 +1008,14 @@ footer>div{margin:25px 0;}
 		transition: 1.5s;
 	}
 	
-	#click{position: absolute; top:0%; left:50%;
+	.click{position: absolute; top:0%; left:50%;
 		transform: translateX(-50%);
 		color:rgba(255,255,255, 0.8);
 		text-shadow: 1px 1px #848484;
 		font-size:22px;
 	}
 	.C-click{display:none;}
-	#click>span{font-size:24px; color:#f4ff8c;}
+	.click>span{font-size:24px; color:#f4ff8c;}
 	
 	/*PROJECT page style*/
 	.fp-controlArrow.fp-prev {left:55px;}
@@ -1078,8 +1078,7 @@ footer>div{margin:25px 0;}
 	}
 	.project-text>div>div>ul>li>span{width:100px; display:inline-block;}
 	
-	#VIEW>li{}
-	#VIEW>li>a{
+	.VIEW>li>a{
 		font-size:20px;
 		padding:5px 10px;
 		display: block;
@@ -1088,9 +1087,9 @@ footer>div{margin:25px 0;}
 		position: relative;
 		z-index: 2;
 	}
-	#VIEW>li>a:hover,
+	.VIEW>li>a:hover,
 	.desk-image>a:hover{color:#fff;}
-	#VIEW>li>a:before{
+	.VIEW>li>a:before{
 		position: absolute;
 		content: '';
 		top:0; left:0;
@@ -1100,8 +1099,8 @@ footer>div{margin:25px 0;}
 		z-index: -3;
 	}
 	
-	#VIEW>li:first-child{margin-left:0;}
-	#VIEW>li>a:hover:before,
+	.VIEW>li:first-child{margin-left:0;}
+	.VIEW>li>a:hover:before,
 	.desk-image>a:hover:before
 	{width: 100%;}
 	
@@ -1368,7 +1367,6 @@ footer>div{margin:25px 0;}
 			height:100%;
 			background:url("../images/airplane-M.png")no-repeat center center;
 		}
-		#main-box{position: relative;}
 		.parallax{width:300px; height: 240px; z-index: 99; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
 		.par {
 			position: absolute;
@@ -1376,13 +1374,14 @@ footer>div{margin:25px 0;}
 		  }
 		.cloud-box{position:absolute; width:100%; height: 100%; top:0;}
 		
-		#clouds{
-			position:absolute; opacity: 0.7;
+		.cloud-box>li{
 			animation-timing-function: ease;
 			animation-iteration-count: infinite;
 			background-position: 0 0;
 			background-repeat: no-repeat;
 		}
+		
+		.clouds{position:absolute; opacity: 0.7;}
 		@keyframes cloud-mv01{
 			0%{transform:translate(0px,0px);}
 			50%{transform:translate(0px,50px);}
@@ -1621,14 +1620,14 @@ footer>div{margin:25px 0;}
 			transition: 1.5s;
 		}
 		
-		#click{position: absolute; top:-10%; left:50%;
+		.click{position: absolute; top:-10%; left:50%;
 			transform: translateX(-50%);
 			color:rgba(255,255,255, 0.8);
 			text-shadow: 1px 1px #848484;
 			font-size:14px;
 		}
 		.C-click{display:none;}
-		#click>span{font-size:18px; color:#f4ff8c;}
+		.click>span{font-size:18px; color:#f4ff8c;}
 		
 		/*PROJECT page style*/
 		.fp-controlArrow.fp-prev {left:6%; border-width: 20px 20px 20px 0;}
@@ -1687,8 +1686,7 @@ footer>div{margin:25px 0;}
 		}
 		.project-text>div>div>ul>li>span{width:70px; display:inline-block;}
 		
-		#VIEW>li{}
-		#VIEW>li>a{
+		.VIEW>li>a{
 			font-size:12px;
 			padding:3px;
 			display: block;
@@ -1697,9 +1695,9 @@ footer>div{margin:25px 0;}
 			position: relative;
 			z-index: 2;
 		}
-		#VIEW>li>a:hover,
+		.VIEW>li>a:hover,
 		.desk-image>a:hover{color:#fff;}
-		#VIEW>li>a:before{
+		.VIEW>li>a:before{
 			position: absolute;
 			content: '';
 			top:0; left:0;
@@ -1709,8 +1707,8 @@ footer>div{margin:25px 0;}
 			z-index: -3;
 		}
 
-		#VIEW>li:first-child{margin-left:0;}
-		#VIEW>li>a:hover:before,
+		.VIEW>li:first-child{margin-left:0;}
+		.VIEW>li>a:hover:before,
 		.desk-image>a:hover:before
 		{width: 100%;}
 		
@@ -1980,7 +1978,6 @@ footer>div{margin:25px 0;}
 			height:100%;
 			background:url("../images/airplane-M.png")no-repeat center center;
 		}
-		#main-box{position: relative;}
 		.parallax{width:300px; height: 240px; z-index: 99; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
 		.par {
 			position: absolute;
@@ -1988,13 +1985,14 @@ footer>div{margin:25px 0;}
 		  }
 		.cloud-box{position:absolute; width:100%; height: 100%; top:0;}
 		
-		#clouds{
-			position:absolute; opacity: 0.7;
+		.cloud-box>li{
 			animation-timing-function: ease;
 			animation-iteration-count: infinite;
 			background-position: 0 0;
 			background-repeat: no-repeat;
 		}
+		
+		.clouds{position:absolute; opacity: 0.7;}
 		@keyframes cloud-mv01{
 			0%{transform:translate(0px,0px);}
 			50%{transform:translate(0px,50px);}
@@ -2233,14 +2231,14 @@ footer>div{margin:25px 0;}
 			transition: 1.5s;
 		}
 		
-		#click{position: absolute; top:-5%; left:50%;
+		.click{position: absolute; top:-5%; left:50%;
 			transform: translateX(-50%);
 			color:rgba(255,255,255, 0.8);
 			text-shadow: 1px 1px #848484;
 			font-size:14px;
 		}
 		.C-click{display:none;}
-		#click>span{font-size:18px; color:#f4ff8c;}
+		.click>span{font-size:18px; color:#f4ff8c;}
 		
 		/*PROJECT page style*/
 		.fp-controlArrow.fp-prev {left:6%; border-width: 20px 20px 20px 0;}
@@ -2300,8 +2298,7 @@ footer>div{margin:25px 0;}
 		}
 		.project-text>div>div>ul>li>span{width:70px; display:inline-block;}
 		
-		#VIEW>li{}
-		#VIEW>li>a{
+		.VIEW>li>a{
 			font-size:12px;
 			padding:3px;
 			display: block;
@@ -2310,9 +2307,9 @@ footer>div{margin:25px 0;}
 			position: relative;
 			z-index: 2;
 		}
-		#VIEW>li>a:hover,
+		.VIEW>li>a:hover,
 		.desk-image>a:hover{color:#fff;}
-		#VIEW>li>a:before{
+		.VIEW>li>a:before{
 			position: absolute;
 			content: '';
 			top:0; left:0;
@@ -2322,8 +2319,8 @@ footer>div{margin:25px 0;}
 			z-index: -3;
 		}
 	
-		#VIEW>li:first-child{margin-left:0;}
-		#VIEW>li>a:hover:before,
+		.VIEW>li:first-child{margin-left:0;}
+		.VIEW>li>a:hover:before,
 		.desk-image>a:hover:before
 		{width: 100%;}
 		
