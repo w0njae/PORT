@@ -1,3 +1,4 @@
+/*모든 사이즈 적용*/
 a{color:#000; text-decoration: none;}
 body{ color:#4e4e4e; background-image:linear-gradient(180deg, #43DCFF 0%, #a9efff 100%)}
 .section{text-align: center; overflow: hidden;}
@@ -33,7 +34,31 @@ body{ color:#4e4e4e; background-image:linear-gradient(180deg, #43DCFF 0%, #a9eff
 	position:absolute;
 	z-index: 10;
 }
+.main-box{position: relative;}
 
+.par {
+    position: absolute;
+	/* transform: translate(-50%, -50%); */
+  }
+.cloud-box{position:absolute; width:100%; height: 100%; top:0;}
+
+.clouds{
+	position:absolute; opacity: 0.7;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+@keyframes cloud-mv01{
+    0%{transform:translate(0px,0px);}
+    50%{transform:translate(0px,50px);}
+    1000%{transform:translate(0px,-50px);}
+}
+@keyframes cloud-mv02{
+    0%{transform:translate(0px,0px);}
+    50%{transform:translate(0px,-50px);}
+    1000%{transform:translate(0px,50px);}
+}
 
 /* 데스크탑 사이즈 */
 @media screen and (min-width:1024px){
@@ -124,31 +149,7 @@ nav{position: relative;}
 	height:100%;
 	background:url("../images/airplane.png")no-repeat center center;
 }
-#main-box{position: relative;}
 .parallax{width:500px; height: 400px; z-index: 99; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
-.par {
-    position: absolute;
-	/* transform: translate(-50%, -50%); */
-  }
-.cloud-box{position:absolute; width:100%; height: 100%; top:0;}
-
-#clouds{
-	position:absolute; opacity: 0.7;
-	animation-timing-function: ease;
-	animation-iteration-count: infinite;
-	background-position: 0 0;
-	background-repeat: no-repeat;
-}
-@keyframes cloud-mv01{
-    0%{transform:translate(0px,0px);}
-    50%{transform:translate(0px,50px);}
-    1000%{transform:translate(0px,-50px);}
-}
-@keyframes cloud-mv02{
-    0%{transform:translate(0px,0px);}
-    50%{transform:translate(0px,-50px);}
-    1000%{transform:translate(0px,50px);}
-}
 
 .cloud01{
 	top:5%; left:2%;
@@ -391,13 +392,13 @@ nav{position: relative;}
 	transition: 1.5s;
 }
 
-#click{position: absolute; top:50%; left:-7%;
+.click{position: absolute; top:50%; left:-7%;
 	transform: translateY(-50%);
 	color:rgba(255,255,255, 0.8);
 	text-shadow: 1px 1px #848484;
 }
 .M-click{display: none;}
-#click>span{font-size:20px; color:#f4ff8c;}
+.click>span{font-size:20px; color:#f4ff8c;}
 
 /*PROJECT page style*/
 
@@ -747,31 +748,7 @@ footer>div{margin:25px 0;}
 		height:100%;
 		background:url("../images/airplane.png")no-repeat center center;
 	}
-	#main-box{position: relative;}
 	.parallax{width:500px; height: 400px; z-index: 99; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
-	.par {
-		position: absolute;
-		/* transform: translate(-50%, -50%); */
-	  }
-	.cloud-box{position:absolute; width:100%; height: 100%; top:0;}
-	
-	#clouds{
-		position:absolute; opacity: 0.7;
-		animation-timing-function: ease;
-		animation-iteration-count: infinite;
-		background-position: 0 0;
-		background-repeat: no-repeat;
-	}
-	@keyframes cloud-mv01{
-		0%{transform:translate(0px,0px);}
-		50%{transform:translate(0px,50px);}
-		1000%{transform:translate(0px,-50px);}
-	}
-	@keyframes cloud-mv02{
-		0%{transform:translate(0px,0px);}
-		50%{transform:translate(0px,-50px);}
-		1000%{transform:translate(0px,50px);}
-	}
 	
 	.cloud01{
 		display:none;
@@ -1008,14 +985,14 @@ footer>div{margin:25px 0;}
 		transition: 1.5s;
 	}
 	
-	#click{position: absolute; top:0%; left:50%;
+	.click{position: absolute; top:0%; left:50%;
 		transform: translateX(-50%);
 		color:rgba(255,255,255, 0.8);
 		text-shadow: 1px 1px #848484;
 		font-size:22px;
 	}
 	.C-click{display:none;}
-	#click>span{font-size:24px; color:#f4ff8c;}
+	.click>span{font-size:24px; color:#f4ff8c;}
 	
 	/*PROJECT page style*/
 	.fp-controlArrow.fp-prev {left:55px;}
@@ -1368,32 +1345,8 @@ footer>div{margin:25px 0;}
 			height:100%;
 			background:url("../images/airplane-M.png")no-repeat center center;
 		}
-		#main-box{position: relative;}
 		.parallax{width:300px; height: 240px; z-index: 99; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
-		.par {
-			position: absolute;
-			/* transform: translate(-50%, -50%); */
-		  }
-		.cloud-box{position:absolute; width:100%; height: 100%; top:0;}
-		
-		#clouds{
-			position:absolute; opacity: 0.7;
-			animation-timing-function: ease;
-			animation-iteration-count: infinite;
-			background-position: 0 0;
-			background-repeat: no-repeat;
-		}
-		@keyframes cloud-mv01{
-			0%{transform:translate(0px,0px);}
-			50%{transform:translate(0px,50px);}
-			1000%{transform:translate(0px,-50px);}
-		}
-		@keyframes cloud-mv02{
-			0%{transform:translate(0px,0px);}
-			50%{transform:translate(0px,-50px);}
-			1000%{transform:translate(0px,50px);}
-		}
-		
+
 		.cloud01{
 			top:5%; left:-10%;
 			width:263px;
@@ -1621,14 +1574,14 @@ footer>div{margin:25px 0;}
 			transition: 1.5s;
 		}
 		
-		#click{position: absolute; top:-10%; left:50%;
+		.click{position: absolute; top:-10%; left:50%;
 			transform: translateX(-50%);
 			color:rgba(255,255,255, 0.8);
 			text-shadow: 1px 1px #848484;
 			font-size:14px;
 		}
 		.C-click{display:none;}
-		#click>span{font-size:18px; color:#f4ff8c;}
+		.click>span{font-size:18px; color:#f4ff8c;}
 		
 		/*PROJECT page style*/
 		.fp-controlArrow.fp-prev {left:6%; border-width: 20px 20px 20px 0;}
@@ -1980,32 +1933,8 @@ footer>div{margin:25px 0;}
 			height:100%;
 			background:url("../images/airplane-M.png")no-repeat center center;
 		}
-		#main-box{position: relative;}
 		.parallax{width:300px; height: 240px; z-index: 99; position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);}
-		.par {
-			position: absolute;
-			/* transform: translate(-50%, -50%); */
-		  }
-		.cloud-box{position:absolute; width:100%; height: 100%; top:0;}
-		
-		#clouds{
-			position:absolute; opacity: 0.7;
-			animation-timing-function: ease;
-			animation-iteration-count: infinite;
-			background-position: 0 0;
-			background-repeat: no-repeat;
-		}
-		@keyframes cloud-mv01{
-			0%{transform:translate(0px,0px);}
-			50%{transform:translate(0px,50px);}
-			1000%{transform:translate(0px,-50px);}
-		}
-		@keyframes cloud-mv02{
-			0%{transform:translate(0px,0px);}
-			50%{transform:translate(0px,-50px);}
-			1000%{transform:translate(0px,50px);}
-		}
-		
+
 		.cloud01{
 			top:5%; left:-10%;
 			width:263px;
@@ -2233,14 +2162,14 @@ footer>div{margin:25px 0;}
 			transition: 1.5s;
 		}
 		
-		#click{position: absolute; top:-5%; left:50%;
+		.click{position: absolute; top:-5%; left:50%;
 			transform: translateX(-50%);
 			color:rgba(255,255,255, 0.8);
 			text-shadow: 1px 1px #848484;
 			font-size:14px;
 		}
 		.C-click{display:none;}
-		#click>span{font-size:18px; color:#f4ff8c;}
+		.click>span{font-size:18px; color:#f4ff8c;}
 		
 		/*PROJECT page style*/
 		.fp-controlArrow.fp-prev {left:6%; border-width: 20px 20px 20px 0;}
