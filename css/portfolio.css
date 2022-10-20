@@ -196,7 +196,7 @@ nav{position: relative;}
 
 .cloud07{
 	bottom:13%; left:18%;
-	width: 260px;
+	width: 230px;
 	height:177px;
 	background:url("../images/cloud07.png");
 	animation: cloud-mv02 8s;
@@ -811,7 +811,7 @@ footer>div{margin:25px 0;}
 	
 	.cloud07{
 		top:36%; left:3%;
-		width: 260px;
+		width: 230px;
 		height:177px;
 		background:url("../images/cloud07.png");
 		animation: cloud-mv02 8s;
@@ -1427,7 +1427,7 @@ footer>div{margin:25px 0;}
 		
 		.cloud07{
 			bottom:13%; left:5%;
-			width: 260px;
+			width: 230px;
 			height:177px;
 			background:url("../images/cloud07.png");
 			animation: cloud-mv02 8s;
@@ -2038,7 +2038,7 @@ footer>div{margin:25px 0;}
 		
 		.cloud07{
 			bottom:13%; left:5%;
-			width: 260px;
+			width: 230px;
 			height:177px;
 			background:url("../images/cloud07.png");
 			animation: cloud-mv02 8s;
